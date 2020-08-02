@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+
+
+<div class="container-fluid">
+	<!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Tech Mahindra ERP System</span>
+   <a href="/logout" class="btn btn-danger">Logout</a>
+</nav>
+
+</div>
+<div class="container-fluid">
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand btn" href="#">PCD SCORE</a>
+  <a class="navbar-brand btn" href="#">CSAT/RR</a>
+  <a class="navbar-brand btn" href="#">SUPERVISOR AUDIT SCORE</a>
+  <a class="navbar-brand btn" href="#">ATA REPORT</a>
+  <a class="navbar-brand btn" href="#">DOWNLOADS</a>
+  <a class="navbar-brand btn" href="#">ROSTER</a>
+  <a class="navbar-brand btn" href="#">CALIBARATATION REPORT</a>
+  <a class="navbar-brand btn" href="#">IMPORTANT LINKS</a>
+ 
+</nav>
+</div>
+<div class="container text-center card">
+	<h2>Hello {{data1.ename}} you Score is Below</h2>
+</div>
+<div class="table-responsive">
+<table class="table table-bordered text-center">
+	<thead class="table-dark">
+		<tr>
+			<th>PCD Scor</th>
+			<th>Team Leader</th>
+			<th>AM</th>
+			<th>PCD</th>
+			<th>COMPSS</th>
+			<th>COMPO</th>
+			<th>CC</th>
+			<th>CP</th>
+			<th>Date</th>
+
+		</tr>
+	</thead>
+		<tr>
+			<td>{{data.emp_id}}</td>
+			<td>{{data.team_leader}}</td>
+			<td>{{data.am}}</td>
+			<td>{{data.pcd}}</td>
+			<td>{{data.compss}}</td>
+			<td>{{data.compo}}</td>
+			<td>{{data.cc}}</td>
+			<td>{{data.cp}}</td>
+			 <td>{{data.date_time}}</td>
+		</tr>
+	</table>	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
